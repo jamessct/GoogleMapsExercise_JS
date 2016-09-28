@@ -22,15 +22,15 @@ var initialize = function() {
   map.addListenerInfoWindow(infoWindow, newYork); 
 
   var button = teleportButton();
-  addButton(teleportButton);
+  addButton(button);
   button.onclick = function() {
     teleport(map);
   }
 }
 
 var teleport = function(map) {
-  var centerer = { lat: 55.94716, lng: -3.20198}; 
-  map.googleMap.setCenter(new google.maps.LatLng(centerer.lat, centerer.lng));
+  var codeClan = { lat: 55.94716, lng: -3.20198}; 
+  map.googleMap.setCenter(new google.maps.LatLng(codeClan.lat, codeClan.lng));
   map.addClickEvent();
 }
 
